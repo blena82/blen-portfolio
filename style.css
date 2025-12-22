@@ -1,0 +1,74 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 30px;
+  font-size: 14px; /* smaller font */
+  color: #333;
+}
+
+/* Main frame */
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  margin-bottom: 6px;
+  font-size: 26px;
+  color: #18614a;
+}
+
+header p {
+  font-size: 13px;
+  color: #555;
+}
+
+/* Section titles */
+h2 {
+  font-size: 17px;
+  color: #0f7a66; /* blue accent */
+  border-bottom: 2px solid #0f7a66;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+
+/* Sections */
+section {
+  margin-bottom: 22px;
+}
+
+/* Lists */
+ul {
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* Contact section */
+#contact p {
+  margin: 4px 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+  .container {
+    padding: 20px;
+  }
+}
