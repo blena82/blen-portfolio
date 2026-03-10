@@ -2,56 +2,226 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blen Wassie | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
 </head>
 <body>
 
-<div class="container">
-    <header>
-    <h1>Blen Wassie</h1>
-    <p>Computer Science Undergraduate | Backend • Databases • Networking</p>
-  </header>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">BW<span class="dot">.</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Computer Science undergraduate at AURAK with interests in backend development,
-      database systems, and computer networking. Experience in frontend, UX design,
-      and Python-based research.
-    </p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content reveal">
+      <div class="hero-badge">Computer Science Student @ AURAK</div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="highlight">Blen Wassie</span>
+      </h1>
+      <p class="hero-subtitle">
+        I build things with code — from AI-powered dashboards and compilers 
+        to database systems and NLP pipelines.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">5+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">6</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">1st</span>
+          <span class="stat-label">Math Olympiad</span>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <p>B.Sc. Computer Science (In Progress) - American University of Ras Al Khaimah</p>
-  </section>
-  
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul id="projectList"></ul>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label reveal">01</div>
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p>
+            I'm a third-year Computer Science student at the American University 
+            of Ras Al Khaimah, passionate about solving real problems through code. 
+            My work spans AI search algorithms, compiler design, natural language processing, 
+            and full-stack database systems.
+          </p>
+          <p>
+            I've been recognized with the <strong>President's List Award</strong> for academic 
+            excellence and hold a <strong>Gold Medal</strong> from the Ethiopian National Math 
+            Olympiad. Currently seeking a software engineering or AI internship to apply and 
+            grow my skills.
+          </p>
+        </div>
+        <div class="about-details">
+          <div class="detail-card">
+            <span class="detail-icon">🎓</span>
+            <div>
+              <strong>B.Sc. Computer Science</strong>
+              <p>AURAK — Expected 2027</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <span class="detail-icon">🏆</span>
+            <div>
+              <strong>President's List</strong>
+              <p>Multiple Semesters</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <span class="detail-icon">🥇</span>
+            <div>
+              <strong>Math Olympiad Gold</strong>
+              <p>1st Place, Grade 12</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <span class="detail-icon">📍</span>
+            <div>
+              <strong>Location</strong>
+              <p>Ras Al Khaimah, UAE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <p>C++, Java, Python, SQL, HTML/CSS, Data Structures, Networking Basics</p>
+  <!-- Projects Section -->
+  <section id="projects" class="section section-dark">
+    <div class="container">
+      <div class="section-label reveal">02</div>
+      <h2 class="section-title reveal">Projects</h2>
+      <div class="projects-grid" id="projectList"></div>
+    </div>
   </section>
 
-  <section id="achievements">
-    <h2>Achievements</h2>
-    <ul>
-      <li>Gold Medal - Ethio Math Olympiad</li>
-      <li>President's List - AURAK</li>
-    </ul>
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-label reveal">03</div>
+      <h2 class="section-title reveal">Technical Skills</h2>
+      <div class="skills-grid reveal">
+        <div class="skill-group">
+          <h3 class="skill-group-title">Languages</h3>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">C</span>
+            <span class="tag">C++</span>
+            <span class="tag">Java</span>
+            <span class="tag">SQL</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">LaTeX</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Tools & Frameworks</h3>
+          <div class="skill-tags">
+            <span class="tag">Streamlit</span>
+            <span class="tag">Plotly</span>
+            <span class="tag">Matplotlib</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">Flex/Lex</span>
+            <span class="tag">Git/GitHub</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Concepts</h3>
+          <div class="skill-tags">
+            <span class="tag">A* / UCS / Greedy Search</span>
+            <span class="tag">NLP (BERT)</span>
+            <span class="tag">Compiler Design</span>
+            <span class="tag">Database Normalization</span>
+            <span class="tag">Algorithm Optimization</span>
+            <span class="tag">Data Structures</span>
+            <span class="tag">Computer Networks</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: 2023006216@aurak.ac.ae</p>
-    <p>Location: Ras Al Khaimah, UAE</p>
+  <!-- Experience Section -->
+  <section id="experience" class="section section-dark">
+    <div class="container">
+      <div class="section-label reveal">04</div>
+      <h2 class="section-title reveal">Experience & Certifications</h2>
+      <div class="exp-grid reveal">
+        <div class="exp-card">
+          <div class="exp-date">May — Aug 2023</div>
+          <h3>Content Creator</h3>
+          <p class="exp-company">KURAZTECH, Addis Ababa</p>
+          <p>Developed exam-focused STEM content for students preparing for the Ethiopian National Entrance Exams. Collaborated with the dev team on launching an online learning platform.</p>
+        </div>
+        <div class="exp-card">
+          <div class="exp-date">2026</div>
+          <h3>Green Skills & Sustainability</h3>
+          <p class="exp-company">LinkedIn Learning — 6 Courses</p>
+          <p>Completed coursework in sustainable development, green careers, sustainability strategy, and employee engagement in sustainability initiatives.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <script src="script.js"></script>
-</div>
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-label reveal">05</div>
+      <h2 class="section-title reveal">Get in Touch</h2>
+      <div class="contact-content reveal">
+        <p class="contact-text">
+          I'm currently looking for internship opportunities in software engineering 
+          and AI. If you'd like to connect, feel free to reach out.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:2023006216@aurak.ac.ae" class="contact-card">
+            <span class="contact-icon">✉️</span>
+            <span>2023006216@aurak.ac.ae</span>
+          </a>
+          <a href="https://github.com/blena82" target="_blank" class="contact-card">
+            <span class="contact-icon">💻</span>
+            <span>GitHub</span>
+          </a>
+          <a href="#" class="contact-card">
+            <span class="contact-icon">🔗</span>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Designed & built by Blen Wassie — 2026</p>
+  </footer>
+
+  <script src="script2.js"></script>
 </body>
 </html>
