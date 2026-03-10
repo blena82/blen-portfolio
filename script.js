@@ -5,6 +5,13 @@
 
 const projects = [
   {
+    icon: "📋",
+    title: "Dynamic Survey Generator",
+    tech: "React · Express · Google Gemini · Xenova Embeddings",
+    description: "AI-powered survey platform built with RAK Statistics Center. Built the AI chatbot assistant and the quality evaluation pipeline — readability scoring, semantic duplicate detection, cosine similarity, and LLM-based grading.",
+    link: "https://github.com/blena82/Dynamic-Survey"
+  },
+  {
     icon: "🎓",
     title: "Student At-Risk Recovery Planner",
     tech: "Python · Streamlit · Plotly · A* Search",
